@@ -25,12 +25,13 @@ img{ width: 150px; border-radius: 50%; text-align: center;}
     border-radius: 22px;
     transition: all .3s;
     margin-top: 25px;
-    margin-left: 400px;
-    margin-right: 400px;
+    display: none;
     padding: 10px 10px 10px 10px;
 }
 
 .form {
+  text-align: center;
+ 
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -44,7 +45,7 @@ img{ width: 150px; border-radius: 50%; text-align: center;}
   #heading {
    
     text-align: center;
-    margin: 2em;
+ 
     color: rgb(0, 255, 200);
     font-size: 1.9em;
   }
@@ -157,3 +158,21 @@ img{ width: 150px; border-radius: 50%; text-align: center;}
   .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
   }
+
+  /* Utilisation de units relatives */
+body {
+  font-size: 16px; /* Utilisation de 'rem' au lieu de 'px' pour la taille de la police */
+}
+
+
+
+/* Utilisation de media queries pour les écrans plus petits */
+@media screen and (max-width: 768px), screen and (max-width: 1024px), screen and (max-width: 820px) {
+    h1 {
+        font-size: 2em; /* Réduire la taille du titre pour les écrans plus petits */
+    }
+
+    .card, .card2 {
+        margin: 10px; /* Réduire les marges pour les écrans plus petits */
+    }
+}
